@@ -1,0 +1,190 @@
+<html></html>
+<head>
+    <title>Día del Internet Seguro</title>
+    <!-- Fuentes desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif; /* Fuente general */
+            background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+            color: #fff;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px 20px;
+            border-bottom: 3px solid #fff;
+            border-radius: 0 0 15px 15px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif; /* Fuente para el título */
+            font-size: 3.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        p.intro {
+            font-family: 'Lora', serif; /* Fuente para subtítulos */
+            font-size: 1.3em;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .tablinks {
+            background: transparent;
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            width: 20%;
+            border: none;
+            text-align: center;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .tablinks:hover, .tablinks.active {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+            border-radius: 10px;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            background: #a8c0ff;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            animation: fadeIn 0.6s ease-in-out;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tabcontent .text {
+            width: 50%;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .tabcontent img, .tabcontent video {
+            width: 40%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Día Internacional del Internet Seguro</h1>
+        <p class="intro">El Día del Internet Seguro busca concienciar sobre la importancia de navegar de manera segura y responsable en la red. Desde proteger nuestras contraseñas hasta evitar fraudes en línea, es esencial conocer las mejores prácticas para un uso seguro del internet.</p>
+    </header>
+
+    <div class="tabs">
+        <button class="tablinks" onclick="openTab(event, 'Contraseñas')">🔒 Contraseñas Seguras</button>
+        <button class="tablinks" onclick="openTab(event, 'Moviles')">📱 Seguridad en Dispositivos</button>
+        <button class="tablinks" onclick="openTab(event, 'Trabajo')">💼 Ciberseguridad en el Trabajo</button>
+        <button class="tablinks" onclick="openTab(event, 'Phishing')">🎣 Phishing y Fraudes</button>
+        <button class="tablinks" onclick="openTab(event, 'Proteccion')">👶 Protección Infantil</button>
+    </div>
+
+    <div id="Contraseñas" class="tabcontent">
+        <div class="text">
+            <h2>🔒 Contraseñas Seguras</h2>
+            
+            <p>Una contraseña segura es aquella que es difícil de adivinar o descifrar. Debe ser larga (al menos 12 caracteres), combinar letras mayúsculas y minúsculas, números y símbolos, y evitar información personal predecible. Además, es recomendable usar un gestor de contraseñas y no reutilizar la misma clave en varios sitios.</p>
+        </div>
+        <img src="https://i.pinimg.com/474x/5a/c2/7e/5ac27e8e0d2c75dbb4edcfad3a2b3ba2.jpg" alt="Seguridad de Contraseñas">
+    </div>
+
+    <div id="Moviles" class="tabcontent">
+        <div class="text">
+            <h2>📱 Seguridad en Dispositivos Móviles</h2>
+            
+            <p>La seguridad en dispositivos móviles es fundamental para proteger la información personal y evitar accesos no autorizados. Para ello, es importante usar contraseñas seguras o autenticación biométrica, mantener el sistema y las aplicaciones actualizados, evitar redes WiFi públicas sin protección y descargar solo aplicaciones de fuentes confiables. Además, activar el cifrado y las funciones de rastreo en caso de pérdida o robo ayuda a prevenir riesgos y mejorar la protección del dispositivo.</p>
+        </div>
+        <img src="https://i.pinimg.com/736x/53/46/a4/5346a4b93bf822923b292a18f5713cae.jpg" alt="Seguridad en Móviles">
+    </div>
+
+    <div id="Trabajo" class="tabcontent">
+        <div class="text">
+            <h2>💼 Ciberseguridad en el Trabajo</h2>
+            
+            <p>La ciberseguridad en el trabajo es esencial para proteger la información y los sistemas de una empresa contra amenazas digitales. Para ello, es importante usar contraseñas seguras, actualizar el software periódicamente y evitar abrir correos electrónicos o enlaces sospechosos. Además, se recomienda conectar solo a redes seguras, hacer copias de seguridad y aplicar el principio de mínimo acceso para reducir riesgos. La capacitación del personal en buenas prácticas de seguridad también es clave para prevenir ataques como el phishing o el malware.</p>
+        </div>
+        <img src="https://i.pinimg.com/736x/70/48/8a/70488aa4c8527ae7b1f9b7107299311e.jpg" alt="Ciberseguridad en el Trabajo">
+    </div>
+
+    <div id="Phishing" class="tabcontent">
+        <div class="text">
+            <h2>🎣 Phishing y Fraudes</h2>
+            
+            <p>No hagas clic en enlaces sospechosos.</p>
+        </div>
+        <video controls>
+            <source src="c:\Users\Pc\Downloads\⚠QUE es el PHISHING y CÓMO FUNCIONA⚠  Cómo evitar ataques de phishing - Cegamer (720p, h264).mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="Proteccion" class="tabcontent">
+        <div class="text">
+            <h2>👶 Protección Infantil en Internet</h2>
+            
+            <p>La protección infantil en Internet es fundamental para garantizar un entorno seguro para los niños mientras navegan en línea. Para ello, es importante establecer controles parentales, supervisar el contenido que consumen y educarlos sobre los riesgos digitales, como el ciberacoso y el phishing. Además, se recomienda fomentar el uso de sitios y aplicaciones adecuadas para su edad, evitar compartir información personal y dialogar con ellos sobre su actividad en línea. La seguridad en Internet es una responsabilidad compartida entre padres, educadores y las plataformas digitales.</p>
+        </div>
+        <img src="https://i.pinimg.com/736x/55/19/92/55199201768f6f8a5d97942e932a787d.jpg" alt="Protección Infantil">
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            let i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).style.display = "flex";
+            evt.currentTarget.classList.add("active");
+        }
+
+        document.getElementsByClassName("tablinks")[0].click();
+    </script>
+
+</body>
+</html>
